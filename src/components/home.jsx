@@ -17,52 +17,44 @@ export default function Home({ onGoMenu }) {
                 position: 'relative',
             }}
         >
-            <div style={{ backgroundColor: 'red', width: '80%', }}>
-                <div>
+            <div
+                style={{
+                    backgroundColor: 'red',
+                    width: '80%',
+                    display: 'flex',             // satırları yan yana koymak için
+                    justifyContent: 'space-between', // iki div arası boşluk
+                    alignItems: 'flex-start',   // üstten hizala
+                    margin: '0 auto'            // sayfa ortası
+                }}
+            >
+                {/* Sol taraf */}
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
                     <button
-                        style={{
-                            margin: '20px',
-                            padding: '12px',
-                            fontSize: '1rem',
-                            fontWeight: '700',
-                            color: 'white',
-                            backgroundColor: '#99a8a2ff', // mor-mavi ton
-                            border: 'none',
-                            borderRadius: '8px',
-                            cursor: 'pointer',
-                            transition: 'all 0.6s ease',
-                        }}
-                        onMouseEnter={e => e.currentTarget.style.backgroundColor = '#262727ff'}
-                        onMouseLeave={e => e.currentTarget.style.backgroundColor = '#99a8a2ff'}
+                        className='app-button'
                     >
                         Soslu tavuklar
                     </button>
-                    <button>
-                        Soslu tavuklar
+                    <button
+                        className='app-button'
+                    >
+                        Soslu tavuklar aufsdghjakslasşdlasd
                     </button>
-
                 </div>
-                <div>
-                    <button>
-                        Soslu tavuklar
-                    </button>
-                    <button>
-                        Soslu tavuklar
-                    </button>
 
-                </div>
-                <div>
-                    <button>
+                {/* Sağ taraf */}
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    <button
+                        className='app-button'
+                    >
                         Soslu tavuklar
                     </button>
-                    <button>
-                        Soslu tavuklar
+                    <button
+                        className='app-button'
+                    >
+                        Soslu tavuklar aksdhgjasjdh
                     </button>
-
                 </div>
             </div>
-
-
         </div>
     )
 }

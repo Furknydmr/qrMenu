@@ -1,0 +1,36 @@
+img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  /* soluklaştırır */
+  filter: brightness(80%);
+  /* koyuluk ayarı */
+}
+
+.app-button {
+  flex: 1 1 calc(50% - 10px);
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background-color: #99a8a2ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+
+  display: inline-block;
+  /* genişlemeyi kontrol eder */
+  max-width: 200px;
+  min-width: 120px;
+  white-space: normal;
+  /* yazı alt satıra geçer */
+  word-wrap: break-word;
+  /* uzun kelimeler satır kırar */
+  text-align: center;
+}
+
+/* Hover efekti */
+.app-button:hover {
+  background-color: #262727ff;
+}

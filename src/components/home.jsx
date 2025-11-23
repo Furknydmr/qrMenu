@@ -26,7 +26,7 @@ export default function Home() {
                 position: 'relative',
             }}
         >
-            <div style={{ backgroundColor: 'red', width: '90%', justifyContent: 'center', alignItems: 'center', padding: '5px', }}>
+            <div style={{ width: '90%', justifyContent: 'center', alignItems: 'center', padding: '5px', }}>
                 <div className="category-container">
                     {categories.map((item, index) => (
                         <button key={index} className="category-box">

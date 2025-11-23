@@ -17,12 +17,52 @@ export default function Home({ onGoMenu }) {
                 position: 'relative',
             }}
         >
-            <button
-                onClick={onGoMenu}
-                style={{ marginTop: '20px', padding: '10px 20px', borderRadius: '10px' }}
-            >
-                Menüye Git
-            </button>
+            <div style={{ backgroundColor: 'red', width: '80%', }}>
+                <div>
+                    <button
+                        style={{
+                            margin: '20px',
+                            padding: '12px',
+                            fontSize: '1rem',
+                            fontWeight: '700',
+                            color: 'white',
+                            backgroundColor: '#99a8a2ff', // mor-mavi ton
+                            border: 'none',
+                            borderRadius: '8px',
+                            cursor: 'pointer',
+                            transition: 'all 0.6s ease',
+                        }}
+                        onMouseEnter={e => e.currentTarget.style.backgroundColor = '#262727ff'}
+                        onMouseLeave={e => e.currentTarget.style.backgroundColor = '#99a8a2ff'}
+                    >
+                        Soslu tavuklar
+                    </button>
+                    <button>
+                        Soslu tavuklar
+                    </button>
+
+                </div>
+                <div>
+                    <button>
+                        Soslu tavuklar
+                    </button>
+                    <button>
+                        Soslu tavuklar
+                    </button>
+
+                </div>
+                <div>
+                    <button>
+                        Soslu tavuklar
+                    </button>
+                    <button>
+                        Soslu tavuklar
+                    </button>
+
+                </div>
+            </div>
+
+
         </div>
     )
 }

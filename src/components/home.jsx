@@ -1,6 +1,15 @@
 import background from '../assets/images/background-phone.jpg'
 
-export default function Home({ onGoMenu }) {
+export default function Home() {
+
+    const categories = [
+        "DÖNER 228",
+        "İÇECEKLER",
+        "ÖĞRENCİ MENÜ",
+        "KÖFTE MENÜ",
+        "ATIŞTIRMALIK",
+        "PİLAV MENÜ"
+    ];
     return (
         <div
             style={{
@@ -17,44 +26,22 @@ export default function Home({ onGoMenu }) {
                 position: 'relative',
             }}
         >
-            <div
-                style={{
-                    backgroundColor: 'red',
-                    width: '80%',
-                    display: 'flex',             // satırları yan yana koymak için
-                    justifyContent: 'space-between', // iki div arası boşluk
-                    alignItems: 'flex-start',   // üstten hizala
-                    margin: '0 auto'            // sayfa ortası
-                }}
-            >
-                {/* Sol taraf */}
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                    <button
-                        className='app-button'
-                    >
-                        Soslu tavuklar
-                    </button>
-                    <button
-                        className='app-button'
-                    >
-                        Soslu tavuklar aufsdghjakslasşdlasd
-                    </button>
+            <div style={{ backgroundColor: 'red', width: '90%', justifyContent: 'center', alignItems: 'center', padding: '5px', }}>
+                <div className="category-container">
+                    {categories.map((item, index) => (
+                        <button key={index} className="category-box">
+                            {item}
+                        </button>
+                    ))}
                 </div>
 
-                {/* Sağ taraf */}
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                    <button
-                        className='app-button'
-                    >
-                        Soslu tavuklar
-                    </button>
-                    <button
-                        className='app-button'
-                    >
-                        Soslu tavuklar aksdhgjasjdh
-                    </button>
-                </div>
+
             </div>
+
+
         </div>
     )
+
+
+
 }
